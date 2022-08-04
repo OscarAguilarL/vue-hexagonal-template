@@ -12,8 +12,16 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
+    camelcase: 'off',
+    '@typescript-eslint/camelcase': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'linebreak-style': 'off',
+    'no-underscore-dangle': 'off',
+    'import/order': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    'import/prefer-default-export': 'off',
+    'class-methods-use-this': 'off',
   },
   overrides: [
     {

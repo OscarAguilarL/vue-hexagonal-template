@@ -1,12 +1,10 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import 'reflect-metadata';
+import Application from '@/vue-app/application';
+import TYPES from '@/modules/types';
+import App from '@/vue-app/App.vue';
+import Container from '@/container';
 
-Vue.config.productionTip = false;
+import './styles/index.css';
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount('#app');
+Container.instance().get<Application>(TYPES.APPLICATION).create(App);
