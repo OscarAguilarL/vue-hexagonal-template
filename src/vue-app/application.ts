@@ -1,4 +1,4 @@
-import TYPES from '@/modules/types';
+import TYPES from '@/types';
 
 import { VueConstructor } from 'vue';
 import router from '@/vue-app/router';

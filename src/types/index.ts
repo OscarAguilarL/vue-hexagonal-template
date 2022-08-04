@@ -1,4 +1,4 @@
-import SHARED_TYPES from './shared/types';
+import SHARED_TYPES from '../modules/shared/types';
 
 export default {
   ...SHARED_TYPES,

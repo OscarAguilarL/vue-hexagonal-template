@@ -3,7 +3,7 @@
 import { interfaces } from 'inversify';
 import { container } from 'inversify-props';
 import Vue, { VueConstructor } from 'vue';
-import TYPES from '@/modules/types';
+import TYPES from '@/types';
 import Application from '@/vue-app/application';
 import setupModules from '@/modules';
 
