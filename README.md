@@ -5,6 +5,14 @@
 yarn install
 ```
 
+### Set Environment Variables
+
+Use .env.local.example as base.
+
+```bash
+cp .env.example .env
+```
+
 ### Compiles and hot-reloads for development
 ```
 yarn serve
