@@ -3,7 +3,7 @@ import TYPES from './types';
 import Runner from '@/modules/shared/runner/domain';
 import ExecutorLink from '@/modules/shared/runner/domain/executor-link';
 
-export default function setupRunnerModule (container: Container) {
+export default function setupRunnerModule(container: Container) {
   container
     .bind<Runner>(TYPES.RUNNER)
     .to(Runner)
