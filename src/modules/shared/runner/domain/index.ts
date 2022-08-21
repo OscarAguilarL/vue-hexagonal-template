@@ -8,7 +8,6 @@ import Inject from '@/modules/shared/di/domain/inject';
 
 @Injectable()
 export default class Runner {
-  // eslint-disable-next-line no-useless-constructor
   constructor(@Inject(TYPES.EXECUTOR_LINK) private readonly executorLink: ExecutorLink) {}
 
   // eslint-disable-next-line class-methods-use-this

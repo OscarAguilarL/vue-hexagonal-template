@@ -10,17 +10,15 @@ import Inject from '@/modules/shared/di/domain/inject';
 
 @Injectable()
 export default class Application {
-  @Inject(TYPES.VUE)
-  private readonly vue!: VueConstructor;
+  constructor(@Inject(TYPES.VUE) private readonly Vue: VueConstructor) {}
 
   create(app: VueConstructor) {
-    this.vue.config.productionTip = false;
+    this.Vue.config.productionTip = false;
 
-    // eslint-disable-next-line new-cap
-    return new this.vue({
+    return new this.Vue({
       router,
       store,
-      render: (h) => h(app),
+      render: (create) => create(app),
     }).$mount('#app');
   }
 }

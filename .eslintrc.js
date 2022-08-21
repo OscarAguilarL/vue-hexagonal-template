@@ -22,6 +22,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     'import/prefer-default-export': 'off',
     'class-methods-use-this': 'off',
+    'no-useless-constructor': 0,
   },
   overrides: [
     {
